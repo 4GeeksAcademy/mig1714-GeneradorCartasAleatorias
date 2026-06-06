@@ -1,5 +1,13 @@
-@import "bootstrap/dist/css/bootstrap.min.css";
 
 body{
     background: white;
 }
+
+
+.card{
+
+    height: 400px;
+    
+}
+
+   
