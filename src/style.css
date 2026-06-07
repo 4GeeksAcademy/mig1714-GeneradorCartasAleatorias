@@ -1,13 +1,38 @@
 
 body{
-    background: white;
+    background: rgb(90, 194, 64);
 }
 
 
 .card{
 
-    height: 400px;
+    height: 500px;
+    width: 450px;
+
+
     
 }
 
    
+.numero{
+
+    font-size: 150px;
+}
+
+.icon1, .icon2{
+
+    font-size: 150px;
+}
+
+button:hover{
+
+    background : rgba(82, 113, 181, 0.796) !important;
+    border: none;
+}
+
+button:active {
+
+    border: none;
+    background : rgba(181, 82, 136, 0.796) !important;
+    border-radius: 10px;
+}

@@ -1,32 +1,53 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./assets/img/4geeks.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
 
-    <!-- Fontawesome is our recomended library for icons -->
-    <link rel="stylesheet" href="/src/style.css">
-    
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body onclic="cambiarCarta()">
-    <div class="card d-flex w-50 mx-auto border-primary">
-      <div class="icon1">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./assets/img/4geeks.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello Rigo with Vanilla.js</title>
+
+  <!-- Fontawesome is our recomended library for icons -->
+  <link rel="stylesheet" href="/src/style.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body >
+  <div class="container card  d-flex  flex-column  mx-auto h-100 mt-3 align-items-center justify-content-center border">
+
+    <div class="row  d-flex   w-100">
+
+
+      <div class="d-flex icon1 align-items-start ">
         ♦
 
       </div>
-      <div class="numero">
+      <div class="numero text-center">
         5
       </div>
-      <div class="icon2">
+      <div class="d-flex icon2  align-items-end justify-content-end">
         ♦
       </div>
+
+
+
 
     </div>
 
-    <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
-    <script type="module" src="/app.js"></script>
-  </body>
+
+
+
+
+  </div>
+
+  <div id="boton" class="d-flex justify-content-center align-items-center mt-4">
+    <button onclick="cambiarCarta()" class="p-3 btn btn-secondary border-0 rounded-3 fs-4">Oprima para cambiar carta</button>
+  </div>
+
+  <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
+  <script type="module" src="/app.js"></script>
+</body>
+
 </html>
