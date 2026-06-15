@@ -11,19 +11,21 @@ window.onload = function() {
   console.log("Hello Rigo from the console!");
 };
 
-const iconos= ["♦" ,"♥" ,"♠" ,"♣"];
+//SE CAMBIAN CONSTANTES A LETRA MAYUSCULA PARA 
 
-const numeros = ["A", 2, 3, 4, 5, 6, 7, 8, 9, "J", "Q", "K"];
+const ICONOS= ["♦" ,"♥" ,"♠" ,"♣"];
 
-const colores = ["red", "black"]
+const NUMEROS = ["A", 2, 3, 4, 5, 6, 7, 8, 9, "J", "Q", "K"];
+
+const COLORES = ["red", "black"]
 
 const seleccionarElemento =(arr)=>{
 
   return Math.floor(Math.random()* arr.length );
 }
-console.log(numeros.length);
-console.log(iconos[seleccionarElemento(iconos)]);
-console.log(numeros[seleccionarElemento(numeros)]);
+console.log(NUMEROS.length);
+console.log(ICONOS[seleccionarElemento(ICONOS)]);
+console.log(NUMEROS[seleccionarElemento(NUMEROS)]);
 
 
 
@@ -32,17 +34,19 @@ console.log(numeros[seleccionarElemento(numeros)]);
 
 const cambiarCarta =()=>{
 
-  const icono = iconos[seleccionarElemento(iconos)];
 
-  const numero = numeros[seleccionarElemento(numeros)];
+  //SE ELIMINAN CONSTANTES Y SE DEJA EN VARIABLES CON LET
+  let icono = ICONOS[seleccionarElemento(ICONOS)];
 
-  let color = "";//colores[seleccionarElemento(colores)];
+  let numero = NUMEROS[seleccionarElemento(NUMEROS)];
 
-  const icon1 = document.querySelector(".icon1");
+  let color = "";
 
-  const icon2 = document.querySelector(".icon2");
+  let icon1 = document.querySelector(".icon1");
 
-  const valor = document.querySelector(".numero");
+  let icon2 = document.querySelector(".icon2");
+
+  let valor = document.querySelector(".numero");
 
   console.log(icono, numero);
 
@@ -76,10 +80,17 @@ const cambiarCarta =()=>{
 
 }
 
-const boton = document.getElementById("boton");
+//Se renombra funcion que indique que es lo que hace el boton exactamente
 
-boton.addEventListener("click", cambiarCarta);
+// const botonCambiarCarta = document.getElementById("boton");
 
-const icono = document.querySelector('.icon1');
-console.log(icono);
+// botonCambiarCarta.addEventListener("click", cambiarCarta);
 
+// const icono = document.querySelector('.icon1');
+// console.log(icono);
+
+//Se elimina funcion que queda comentada con el proposito de corregir un error que indicaba que 
+//la funcion cambiar carta no existía em console en el inspector.
+//Con la línea siguiente se corrige ese error.
+
+document.getElementById("boton").addEventListener("click", cambiarCarta);
